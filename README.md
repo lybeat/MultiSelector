@@ -16,12 +16,12 @@ MultiSelector is an Android multi selector library.
 
   Introduced the MultiSelector to your layout file
 
-    <com.lybeat.library.MultiSelector
+      '<com.lybeat.library.MultiSelector
             android:id="@+id/multi_selector"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             lybeat:optionBackground="@drawable/bg_item_option_pressed"
-            lybeat:selectorBackground="#ffffff" />
+            lybeat:selectorBackground="#ffffff" />'
 
 * STEP2:
 
@@ -29,7 +29,7 @@ MultiSelector is an Android multi selector library.
 
   Init BaseOption sample:
 
-      List<String> options1 = new ArrayList<>();
+      'List<String> options1 = new ArrayList<>();
       options1.add("全部");
       options1.add("TV版");
       options1.add("OVA.OAD");
@@ -47,13 +47,13 @@ MultiSelector is an Android multi selector library.
 
       List<BaseOption> baseOptions = new ArrayList<>();
       baseOptions.add(baseOption1);
-      baseOptions.add(baseOption2);
+      baseOptions.add(baseOption2);'
 
   Init MultiSelector and set OnSelectListener:
 
-      MultiSelector multiSelector = (MultiSelector) findViewById(R.id.multi_selector);
+      'MultiSelector multiSelector = (MultiSelector) findViewById(R.id.multi_selector);
       multiSelector.addBaseOptions(baseOptions);
-      multiSelector.setOnSelectListener(this);
+      multiSelector.setOnSelectListener(this);'
 
 ## License
 Copyright 2016 lybeat
