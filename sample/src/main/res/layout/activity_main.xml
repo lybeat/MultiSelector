@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lybeat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lybeat.multiselectordemo.MainActivity">
+
+    <com.lybeat.multiselector.MultiSelector
+        android:id="@+id/multi_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lybeat:optionBackground="@drawable/bg_item_option_pressed"
+        lybeat:selectorBackground="#ffffff" />
+
+    <TextView
+        android:id="@+id/choices_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Choices" />
+</LinearLayout>
