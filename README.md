@@ -1,19 +1,21 @@
-# MultiSelector
+## MultiSelector
 MultiSelector is an Android multi selector library.
 
-# Feature
-1.Quickly add a multiple selector for your project.
-2.Back in real time all the options.
-3.Support custom the selector background and option background.
+## Feature
+1. Quickly add a multiple selector for your project.
+2. Back in real time all the options.
+3. Support custom the selector background and option background.
 
-# Demo
+## Demo
 
-#Gradle Dependency
+## Gradle Dependency
     compile 'com.lybeat:multi-selector:1.0.0'
 
-#Usage
+## Usage
 * STEP1:
+
   Introduced the MultiSelector to your layout file
+
     <com.lybeat.library.MultiSelector
             android:id="@+id/multi_selector"
             android:layout_width="match_parent"
@@ -21,9 +23,11 @@ MultiSelector is an Android multi selector library.
             lybeat:optionBackground="@drawable/bg_item_option_pressed"
             lybeat:selectorBackground="#ffffff" />
 * STEP2:
+
   Init BaseOption and MultiSelector in Java code. And set OnSelectListener for MultiSelector.
 
   Init BaseOption sample:
+
       List<String> options1 = new ArrayList<>();
       options1.add("全部");
       options1.add("TV版");
@@ -45,13 +49,15 @@ MultiSelector is an Android multi selector library.
       baseOptions.add(baseOption2);
 
   Init MultiSelector and set OnSelectListener:
+
       MultiSelector multiSelector = (MultiSelector) findViewById(
       R.id.multi_selector);
       multiSelector.setBaseOptions(baseOptions);
       multiSelector.setOnSelectListener(this);
 
-# License
+## License
 Copyright 2016 lybeat
+
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
 http://www.apache.org/licenses/LICENSE-2.0
