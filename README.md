@@ -22,6 +22,7 @@ MultiSelector is an Android multi selector library.
             android:layout_height="wrap_content"
             lybeat:optionBackground="@drawable/bg_item_option_pressed"
             lybeat:selectorBackground="#ffffff" />
+
 * STEP2:
 
   Init BaseOption and MultiSelector in Java code. And set OnSelectListener for MultiSelector.
@@ -50,9 +51,8 @@ MultiSelector is an Android multi selector library.
 
   Init MultiSelector and set OnSelectListener:
 
-      MultiSelector multiSelector = (MultiSelector) findViewById(
-      R.id.multi_selector);
-      multiSelector.setBaseOptions(baseOptions);
+      MultiSelector multiSelector = (MultiSelector) findViewById(R.id.multi_selector);
+      multiSelector.addBaseOptions(baseOptions);
       multiSelector.setOnSelectListener(this);
 
 ## License
