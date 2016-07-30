@@ -17,7 +17,7 @@ MultiSelector is an Android multi selector library.
     Introduced the MultiSelector to your layout file
 
     ```XML
-    <com.lybeat.library.MultiSelector
+    <com.lybeat.multiselector.MultiSelector
         android:id="@+id/multi_selector"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
